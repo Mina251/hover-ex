@@ -1,0 +1,54 @@
+/*  Hover animation  */
+div , p {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;   
+}
+
+div{position: relative;
+    background-color:#ddd;
+    overflow: hidden;
+}
+p{background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    top:200px;    
+    transition: all 0.5s ease-in-out;
+}
+div:hover p{
+    top: 0;
+}
+
+/* Trinagle Shape */
+
+.triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    border-bottom: 100px solid red;
+  }
+  .triangle-down{
+    width: 0;
+    height: 0;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    border-top: 100px solid blue;
+  }
+  .triangle-left{
+    width: 0;
+    height: 0;
+    border-top: 50px solid white;
+    border-bottom: 50px solid white;
+    border-right: 100px solid yellow;
+  }
+  .triangle-right{
+    width: 0;
+    height: 0;
+    border-top: 50px solid white;
+    border-bottom: 50px solid white;
+    border-left: 100px solid green;
+  }
